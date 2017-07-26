@@ -83,19 +83,3 @@ fs.readFile('./dictionary.txt', 'utf8', (err, data) => {
     }
   })
 })
-
-// fs.readFile('./words.txt', 'utf8', (err, data) => {
-//   const words = data.replace(/\W+/g, ' ').split(' ')
-//
-//   const dictionary = words
-//     .filter((w, i) => words.indexOf(w) === i)
-//     .map((f) => f.toLowerCase())
-//
-//   fs.writeFile('./dictionary.txt', dictionary.join(' '), (err) => {
-//     if (err) {
-//       console.log('OH NOES')
-//     }
-//   })
-//
-//   console.log('dictionary', dictionary)
-// })
